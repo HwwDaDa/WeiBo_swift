@@ -31,6 +31,8 @@
 		84BC199D1EF27E2F00D1C53A /* HWBMainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19881EF27E2F00D1C53A /* HWBMainTabBarVC.swift */; };
 		84BC199E1EF27E2F00D1C53A /* HWBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC198A1EF27E2F00D1C53A /* HWBMessageViewController.swift */; };
 		84BC199F1EF27E2F00D1C53A /* HWBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC198C1EF27E2F00D1C53A /* HWBProfileViewController.swift */; };
+		84BC19A21EF2812900D1C53A /* HWBNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19A11EF2812900D1C53A /* HWBNavigationVC.swift */; };
+		84BC19AA1EF2836900D1C53A /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19A41EF2836900D1C53A /* Bundle+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		84BC198A1EF27E2F00D1C53A /* HWBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWBMessageViewController.swift; sourceTree = "<group>"; };
 		84BC198C1EF27E2F00D1C53A /* HWBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWBProfileViewController.swift; sourceTree = "<group>"; };
 		84BC19A01EF27EE900D1C53A /* WeiBo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo-Bridge.h"; sourceTree = "<group>"; };
+		84BC19A11EF2812900D1C53A /* HWBNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWBNavigationVC.swift; sourceTree = "<group>"; };
+		84BC19A41EF2836900D1C53A /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		88C1EE4FE57CAC2583CE9820 /* Pods-WeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeiBo/Pods-WeiBo.debug.xcconfig"; sourceTree = "<group>"; };
 		A670D16908B6026874016E52 /* Pods-WeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeiBo/Pods-WeiBo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +203,7 @@
 		84BC19661EF27E2F00D1C53A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				84BC19A31EF2836900D1C53A /* Extensions */,
 				84BC19671EF27E2F00D1C53A /* Additions */,
 			);
 			path = Tools;
@@ -269,6 +274,7 @@
 			children = (
 				84BC19871EF27E2F00D1C53A /* HWBBaseViewController.swift */,
 				84BC19881EF27E2F00D1C53A /* HWBMainTabBarVC.swift */,
+				84BC19A11EF2812900D1C53A /* HWBNavigationVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -294,6 +300,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84BC19A31EF2836900D1C53A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84BC19A41EF2836900D1C53A /* Bundle+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C8BFDE3C991C0CC9E29F3EEC /* Pods */ = {
@@ -504,6 +518,8 @@
 				84BC199C1EF27E2F00D1C53A /* HWBBaseViewController.swift in Sources */,
 				84BC199A1EF27E2F00D1C53A /* HWBDiscoverViewController.swift in Sources */,
 				84BC199E1EF27E2F00D1C53A /* HWBMessageViewController.swift in Sources */,
+				84BC19AA1EF2836900D1C53A /* Bundle+Extensions.swift in Sources */,
+				84BC19A21EF2812900D1C53A /* HWBNavigationVC.swift in Sources */,
 				84BC19931EF27E2F00D1C53A /* NSString+CZPath.m in Sources */,
 				84BC198E1EF27E2F00D1C53A /* NSArray+Log.m in Sources */,
 				84BC19941EF27E2F00D1C53A /* UIButton+CZAddition.m in Sources */,
