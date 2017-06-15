@@ -9,12 +9,28 @@
 /* Begin PBXBuildFile section */
 		7F938E158270A30F45066A92 /* libPods-WeiBo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DBB83F3D674B80F9218191 /* libPods-WeiBo.a */; };
 		84BC18F21EF25DBF00D1C53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC18F11EF25DBF00D1C53A /* AppDelegate.swift */; };
-		84BC18F41EF25DBF00D1C53A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC18F31EF25DBF00D1C53A /* ViewController.swift */; };
-		84BC18F71EF25DBF00D1C53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BC18F51EF25DBF00D1C53A /* Main.storyboard */; };
 		84BC18F91EF25DBF00D1C53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BC18F81EF25DBF00D1C53A /* Assets.xcassets */; };
 		84BC18FC1EF25DBF00D1C53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BC18FA1EF25DBF00D1C53A /* LaunchScreen.storyboard */; };
 		84BC19071EF25DBF00D1C53A /* WeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19061EF25DBF00D1C53A /* WeiBoTests.swift */; };
 		84BC19121EF25DBF00D1C53A /* WeiBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19111EF25DBF00D1C53A /* WeiBoUITests.swift */; };
+		84BC198E1EF27E2F00D1C53A /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC196A1EF27E2F00D1C53A /* NSArray+Log.m */; };
+		84BC198F1EF27E2F00D1C53A /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC196C1EF27E2F00D1C53A /* NSAttributedString+CZAdditon.m */; };
+		84BC19901EF27E2F00D1C53A /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC196E1EF27E2F00D1C53A /* NSObject+CZRuntime.m */; };
+		84BC19911EF27E2F00D1C53A /* NSString+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19701EF27E2F00D1C53A /* NSString+CZBase64.m */; };
+		84BC19921EF27E2F00D1C53A /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19721EF27E2F00D1C53A /* NSString+CZHash.m */; };
+		84BC19931EF27E2F00D1C53A /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19741EF27E2F00D1C53A /* NSString+CZPath.m */; };
+		84BC19941EF27E2F00D1C53A /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19761EF27E2F00D1C53A /* UIButton+CZAddition.m */; };
+		84BC19951EF27E2F00D1C53A /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19781EF27E2F00D1C53A /* UIColor+CZAddition.m */; };
+		84BC19961EF27E2F00D1C53A /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC197A1EF27E2F00D1C53A /* UILabel+CZAddition.m */; };
+		84BC19971EF27E2F00D1C53A /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC197C1EF27E2F00D1C53A /* UIScreen+CZAddition.m */; };
+		84BC19981EF27E2F00D1C53A /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC197E1EF27E2F00D1C53A /* UIView+CZAddition.m */; };
+		84BC19991EF27E2F00D1C53A /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19801EF27E2F00D1C53A /* UIViewController+CZAddition.m */; };
+		84BC199A1EF27E2F00D1C53A /* HWBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19831EF27E2F00D1C53A /* HWBDiscoverViewController.swift */; };
+		84BC199B1EF27E2F00D1C53A /* HWBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19851EF27E2F00D1C53A /* HWBHomeViewController.swift */; };
+		84BC199C1EF27E2F00D1C53A /* HWBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19871EF27E2F00D1C53A /* HWBBaseViewController.swift */; };
+		84BC199D1EF27E2F00D1C53A /* HWBMainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19881EF27E2F00D1C53A /* HWBMainTabBarVC.swift */; };
+		84BC199E1EF27E2F00D1C53A /* HWBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC198A1EF27E2F00D1C53A /* HWBMessageViewController.swift */; };
+		84BC199F1EF27E2F00D1C53A /* HWBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC198C1EF27E2F00D1C53A /* HWBProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +54,6 @@
 		60DBB83F3D674B80F9218191 /* libPods-WeiBo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeiBo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC18EE1EF25DBF00D1C53A /* WeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC18F11EF25DBF00D1C53A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84BC18F31EF25DBF00D1C53A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84BC18F61EF25DBF00D1C53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84BC18F81EF25DBF00D1C53A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84BC18FB1EF25DBF00D1C53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84BC18FD1EF25DBF00D1C53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +63,38 @@
 		84BC190D1EF25DBF00D1C53A /* WeiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC19111EF25DBF00D1C53A /* WeiBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiBoUITests.swift; sourceTree = "<group>"; };
 		84BC19131EF25DBF00D1C53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BC19681EF27E2F00D1C53A /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		84BC19691EF27E2F00D1C53A /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		84BC196A1EF27E2F00D1C53A /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		84BC196B1EF27E2F00D1C53A /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		84BC196C1EF27E2F00D1C53A /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		84BC196D1EF27E2F00D1C53A /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		84BC196E1EF27E2F00D1C53A /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		84BC196F1EF27E2F00D1C53A /* NSString+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		84BC19701EF27E2F00D1C53A /* NSString+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		84BC19711EF27E2F00D1C53A /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		84BC19721EF27E2F00D1C53A /* NSString+CZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		84BC19731EF27E2F00D1C53A /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		84BC19741EF27E2F00D1C53A /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		84BC19751EF27E2F00D1C53A /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		84BC19761EF27E2F00D1C53A /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		84BC19771EF27E2F00D1C53A /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		84BC19781EF27E2F00D1C53A /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		84BC19791EF27E2F00D1C53A /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		84BC197A1EF27E2F00D1C53A /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		84BC197B1EF27E2F00D1C53A /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		84BC197C1EF27E2F00D1C53A /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		84BC197D1EF27E2F00D1C53A /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		84BC197E1EF27E2F00D1C53A /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		84BC197F1EF27E2F00D1C53A /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		84BC19801EF27E2F00D1C53A /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		84BC19831EF27E2F00D1C53A /* HWBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWBDiscoverViewController.swift; sourceTree = "<group>"; };
+		84BC19851EF27E2F00D1C53A /* HWBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWBHomeViewController.swift; sourceTree = "<group>"; };
+		84BC19871EF27E2F00D1C53A /* HWBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWBBaseViewController.swift; sourceTree = "<group>"; };
+		84BC19881EF27E2F00D1C53A /* HWBMainTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWBMainTabBarVC.swift; sourceTree = "<group>"; };
+		84BC198A1EF27E2F00D1C53A /* HWBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWBMessageViewController.swift; sourceTree = "<group>"; };
+		84BC198C1EF27E2F00D1C53A /* HWBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWBProfileViewController.swift; sourceTree = "<group>"; };
+		84BC19A01EF27EE900D1C53A /* WeiBo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo-Bridge.h"; sourceTree = "<group>"; };
 		88C1EE4FE57CAC2583CE9820 /* Pods-WeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeiBo/Pods-WeiBo.debug.xcconfig"; sourceTree = "<group>"; };
 		A670D16908B6026874016E52 /* Pods-WeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeiBo/Pods-WeiBo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,9 +150,9 @@
 		84BC18F01EF25DBF00D1C53A /* WeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				84BC19641EF27E2F00D1C53A /* Classes */,
 				84BC18F11EF25DBF00D1C53A /* AppDelegate.swift */,
-				84BC18F31EF25DBF00D1C53A /* ViewController.swift */,
-				84BC18F51EF25DBF00D1C53A /* Main.storyboard */,
+				84BC19A01EF27EE900D1C53A /* WeiBo-Bridge.h */,
 				84BC18F81EF25DBF00D1C53A /* Assets.xcassets */,
 				84BC18FA1EF25DBF00D1C53A /* LaunchScreen.storyboard */,
 				84BC18FD1EF25DBF00D1C53A /* Info.plist */,
@@ -130,6 +176,124 @@
 				84BC19131EF25DBF00D1C53A /* Info.plist */,
 			);
 			path = WeiBoUITests;
+			sourceTree = "<group>";
+		};
+		84BC19641EF27E2F00D1C53A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84BC19651EF27E2F00D1C53A /* Model */,
+				84BC19661EF27E2F00D1C53A /* Tools */,
+				84BC19811EF27E2F00D1C53A /* View */,
+				84BC198D1EF27E2F00D1C53A /* ViewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		84BC19651EF27E2F00D1C53A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84BC19661EF27E2F00D1C53A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				84BC19671EF27E2F00D1C53A /* Additions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		84BC19671EF27E2F00D1C53A /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				84BC19681EF27E2F00D1C53A /* CZAdditions.h */,
+				84BC19691EF27E2F00D1C53A /* NSArray+Log.h */,
+				84BC196A1EF27E2F00D1C53A /* NSArray+Log.m */,
+				84BC196B1EF27E2F00D1C53A /* NSAttributedString+CZAdditon.h */,
+				84BC196C1EF27E2F00D1C53A /* NSAttributedString+CZAdditon.m */,
+				84BC196D1EF27E2F00D1C53A /* NSObject+CZRuntime.h */,
+				84BC196E1EF27E2F00D1C53A /* NSObject+CZRuntime.m */,
+				84BC196F1EF27E2F00D1C53A /* NSString+CZBase64.h */,
+				84BC19701EF27E2F00D1C53A /* NSString+CZBase64.m */,
+				84BC19711EF27E2F00D1C53A /* NSString+CZHash.h */,
+				84BC19721EF27E2F00D1C53A /* NSString+CZHash.m */,
+				84BC19731EF27E2F00D1C53A /* NSString+CZPath.h */,
+				84BC19741EF27E2F00D1C53A /* NSString+CZPath.m */,
+				84BC19751EF27E2F00D1C53A /* UIButton+CZAddition.h */,
+				84BC19761EF27E2F00D1C53A /* UIButton+CZAddition.m */,
+				84BC19771EF27E2F00D1C53A /* UIColor+CZAddition.h */,
+				84BC19781EF27E2F00D1C53A /* UIColor+CZAddition.m */,
+				84BC19791EF27E2F00D1C53A /* UILabel+CZAddition.h */,
+				84BC197A1EF27E2F00D1C53A /* UILabel+CZAddition.m */,
+				84BC197B1EF27E2F00D1C53A /* UIScreen+CZAddition.h */,
+				84BC197C1EF27E2F00D1C53A /* UIScreen+CZAddition.m */,
+				84BC197D1EF27E2F00D1C53A /* UIView+CZAddition.h */,
+				84BC197E1EF27E2F00D1C53A /* UIView+CZAddition.m */,
+				84BC197F1EF27E2F00D1C53A /* UIViewController+CZAddition.h */,
+				84BC19801EF27E2F00D1C53A /* UIViewController+CZAddition.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		84BC19811EF27E2F00D1C53A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84BC19821EF27E2F00D1C53A /* Discover */,
+				84BC19841EF27E2F00D1C53A /* Home */,
+				84BC19861EF27E2F00D1C53A /* Main */,
+				84BC19891EF27E2F00D1C53A /* Message */,
+				84BC198B1EF27E2F00D1C53A /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84BC19821EF27E2F00D1C53A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				84BC19831EF27E2F00D1C53A /* HWBDiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		84BC19841EF27E2F00D1C53A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84BC19851EF27E2F00D1C53A /* HWBHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84BC19861EF27E2F00D1C53A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				84BC19871EF27E2F00D1C53A /* HWBBaseViewController.swift */,
+				84BC19881EF27E2F00D1C53A /* HWBMainTabBarVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84BC19891EF27E2F00D1C53A /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				84BC198A1EF27E2F00D1C53A /* HWBMessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		84BC198B1EF27E2F00D1C53A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				84BC198C1EF27E2F00D1C53A /* HWBProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		84BC198D1EF27E2F00D1C53A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C8BFDE3C991C0CC9E29F3EEC /* Pods */ = {
@@ -262,7 +426,6 @@
 			files = (
 				84BC18FC1EF25DBF00D1C53A /* LaunchScreen.storyboard in Resources */,
 				84BC18F91EF25DBF00D1C53A /* Assets.xcassets in Resources */,
-				84BC18F71EF25DBF00D1C53A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +498,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BC18F41EF25DBF00D1C53A /* ViewController.swift in Sources */,
+				84BC19951EF27E2F00D1C53A /* UIColor+CZAddition.m in Sources */,
+				84BC198F1EF27E2F00D1C53A /* NSAttributedString+CZAdditon.m in Sources */,
+				84BC199F1EF27E2F00D1C53A /* HWBProfileViewController.swift in Sources */,
+				84BC199C1EF27E2F00D1C53A /* HWBBaseViewController.swift in Sources */,
+				84BC199A1EF27E2F00D1C53A /* HWBDiscoverViewController.swift in Sources */,
+				84BC199E1EF27E2F00D1C53A /* HWBMessageViewController.swift in Sources */,
+				84BC19931EF27E2F00D1C53A /* NSString+CZPath.m in Sources */,
+				84BC198E1EF27E2F00D1C53A /* NSArray+Log.m in Sources */,
+				84BC19941EF27E2F00D1C53A /* UIButton+CZAddition.m in Sources */,
+				84BC19981EF27E2F00D1C53A /* UIView+CZAddition.m in Sources */,
+				84BC19921EF27E2F00D1C53A /* NSString+CZHash.m in Sources */,
+				84BC19961EF27E2F00D1C53A /* UILabel+CZAddition.m in Sources */,
+				84BC19911EF27E2F00D1C53A /* NSString+CZBase64.m in Sources */,
+				84BC19901EF27E2F00D1C53A /* NSObject+CZRuntime.m in Sources */,
+				84BC19991EF27E2F00D1C53A /* UIViewController+CZAddition.m in Sources */,
+				84BC19971EF27E2F00D1C53A /* UIScreen+CZAddition.m in Sources */,
+				84BC199D1EF27E2F00D1C53A /* HWBMainTabBarVC.swift in Sources */,
 				84BC18F21EF25DBF00D1C53A /* AppDelegate.swift in Sources */,
+				84BC199B1EF27E2F00D1C53A /* HWBHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,14 +552,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84BC18F51EF25DBF00D1C53A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84BC18F61EF25DBF00D1C53A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84BC18FA1EF25DBF00D1C53A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -493,9 +665,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6UB4948UM9;
 				INFOPLIST_FILE = WeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HWW.WeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeiBo/WeiBo-Bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -507,9 +681,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6UB4948UM9;
 				INFOPLIST_FILE = WeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HWW.WeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeiBo/WeiBo-Bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -587,6 +763,7 @@
 				84BC19181EF25DBF00D1C53A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84BC19191EF25DBF00D1C53A /* Build configuration list for PBXNativeTarget "WeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +772,7 @@
 				84BC191B1EF25DBF00D1C53A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84BC191C1EF25DBF00D1C53A /* Build configuration list for PBXNativeTarget "WeiBoUITests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +781,7 @@
 				84BC191E1EF25DBF00D1C53A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
