@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					84BC18AE1EF25A6A00D1C53A = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6UB4948UM9;
 						ProvisioningStyle = Automatic;
 					};
 					84BC18C71EF25A6A00D1C53A = {
@@ -426,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6UB4948UM9;
 				INFOPLIST_FILE = WeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HWW.WeiBo;
@@ -437,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6UB4948UM9;
 				INFOPLIST_FILE = WeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HWW.WeiBo;
