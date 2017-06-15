@@ -13,6 +13,7 @@ class HWBMainTabBarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupChildController()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,15 +29,20 @@ class HWBMainTabBarVC: UITabBarController {
 //设置界面
 extension HWBMainTabBarVC
 {
-    private func setupChildController()
+    func setupChildController()
     {
         let array = [
-            ["clsName":"","title":"","imageName":""],
+            ["clsName":"HWBHomeViewController","title":"首页","imageName":""],
+            ["clsName":"HWBHomeViewController","title":"首页","imageName":""],
         
         ]
         
         var arrayM = [UIViewController]()
+        for dict in array {
+            arrayM.append(controller(dict: dict))
+        }
         
+        viewControllers = arrayM
     }
     //创建一个控制器
     private func controller(dict: [String : String]) -> UIViewController {
