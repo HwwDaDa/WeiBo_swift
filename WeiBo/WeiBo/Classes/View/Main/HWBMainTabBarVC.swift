@@ -17,9 +17,9 @@ class HWBMainTabBarVC: UITabBarController {
         setupComposeButton()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func composeStatus() {
+        print("写微博")
     }
     
     lazy var composeButton:UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
@@ -37,6 +37,7 @@ extension HWBMainTabBarVC
         let w = tabBar.bounds.width / count
         
         composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
+        composeButton.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
         
     }
     
