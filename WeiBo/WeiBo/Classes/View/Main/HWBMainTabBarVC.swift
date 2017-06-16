@@ -14,7 +14,7 @@ class HWBMainTabBarVC: UITabBarController {
         super.viewDidLoad()
 
         setupChildController()
-//        self.tabBar.tintColor = UIColor.orange
+        setupComposeButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,7 +22,7 @@ class HWBMainTabBarVC: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    lazy var composeButton:UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
 }
 
 //类似于OC中的分类，swift中切分代码，相近代码的函数放在一个extension便于代码维护
@@ -30,11 +30,22 @@ class HWBMainTabBarVC: UITabBarController {
 //设置界面
 extension HWBMainTabBarVC
 {
+    func setupComposeButton(){
+        tabBar.addSubview(composeButton)
+        //设置按钮的位置
+        let count = CGFloat(childViewControllers.count)
+        let w = tabBar.bounds.width / count
+        
+        composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
+        
+    }
+    
     func setupChildController()
     {
         let array = [
             ["clsName":"HWBHomeViewController","title":"首页","imageName":"tabbar_home"],
             ["clsName":"HWBMessageViewController","title":"消息","imageName":"tabbar_message_center"],
+            ["clsName":"","title":"","imageName":""],
             ["clsName":"HWBDiscoverViewController","title":"发现","imageName":"tabbar_discover"],
             ["clsName":"HWBProfileViewController","title":"我的","imageName":"tabbar_profile"],
         
