@@ -17,7 +17,8 @@ class HWBMainTabBarVC: UITabBarController {
         setupComposeButton()
     }
 
-    
+    //private只能在本类使用，
+    //@bojc，在运行时通过OC的消息机制被使用
     func composeStatus() {
         print("写微博")
     }
