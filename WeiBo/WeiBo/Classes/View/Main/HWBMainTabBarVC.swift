@@ -14,6 +14,7 @@ class HWBMainTabBarVC: UITabBarController {
         super.viewDidLoad()
 
         setupChildController()
+//        self.tabBar.tintColor = UIColor.orange
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,8 +33,10 @@ extension HWBMainTabBarVC
     func setupChildController()
     {
         let array = [
-            ["clsName":"HWBHomeViewController","title":"首页","imageName":""],
-            ["clsName":"HWBHomeViewController","title":"首页","imageName":""],
+            ["clsName":"HWBHomeViewController","title":"首页","imageName":"tabbar_home"],
+            ["clsName":"HWBMessageViewController","title":"消息","imageName":"tabbar_message_center"],
+            ["clsName":"HWBDiscoverViewController","title":"发现","imageName":"tabbar_discover"],
+            ["clsName":"HWBProfileViewController","title":"我的","imageName":"tabbar_profile"],
         
         ]
         
@@ -54,6 +57,16 @@ extension HWBMainTabBarVC
         //创建视图控制器
         let vc = cls.init()
         vc.title = title;
+        //设置图片
+        vc.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.selectedImage = UIImage(named: imageName + "_selected")
+        
+        //设置标题字体
+        vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.orange], for: .highlighted)
+        
+        //系统默认是十二号字体
+        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 12)], for: UIControlState(rawValue: 0))
+        
         let nav = HWBNavigationVC.init(rootViewController: vc)
         
         return nav
