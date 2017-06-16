@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F938E158270A30F45066A92 /* libPods-WeiBo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DBB83F3D674B80F9218191 /* libPods-WeiBo.a */; };
+		8410C1F01EF3D05800B6FE90 /* HWBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19871EF27E2F00D1C53A /* HWBBaseViewController.swift */; };
 		84BC18F21EF25DBF00D1C53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC18F11EF25DBF00D1C53A /* AppDelegate.swift */; };
 		84BC18F91EF25DBF00D1C53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BC18F81EF25DBF00D1C53A /* Assets.xcassets */; };
 		84BC18FC1EF25DBF00D1C53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BC18FA1EF25DBF00D1C53A /* LaunchScreen.storyboard */; };
@@ -541,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BC19071EF25DBF00D1C53A /* WeiBoTests.swift in Sources */,
+				8410C1F01EF3D05800B6FE90 /* HWBBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

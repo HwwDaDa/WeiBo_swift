@@ -15,11 +15,26 @@ class HWBHomeViewController: HWBBaseViewController {
 
         
     }
-
+    
+    /// 显示好友
+    func showFriend() {
+        print("好友")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
+}
+
+extension HWBHomeViewController{
+
+    //重写父类的方法
+    override func setupUI() {
+        super.setupUI()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(showFriend))
+        
+    }
 }

@@ -12,7 +12,6 @@ class HWBNavigationVC: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
 
