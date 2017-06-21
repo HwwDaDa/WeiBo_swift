@@ -34,7 +34,7 @@ extension HWBHomeViewController{
     override func setupUI() {
         super.setupUI()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(showFriend))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 16, target: self, action: #selector(showFriend))
         
     }
 }
