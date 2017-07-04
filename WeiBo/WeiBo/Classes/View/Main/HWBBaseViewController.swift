@@ -37,6 +37,15 @@ extension HWBBaseViewController{
         
         
         setupNavigationBar()
+        setupTableView()
+    }
+    
+//    设置表格视图
+    private func setupTableView(){
+        tableView = UITableView(frame: view.bounds, style: .plain)
+        
+//        view.addSubview(tableView!)
+        view.insertSubview(tableView!, belowSubview: navigationBar)
     }
     
     private func setupNavigationBar(){
@@ -47,6 +56,7 @@ extension HWBBaseViewController{
         
         navigationBar.barTintColor = UIColor.cz_color(withHex: 0xF6F6F6)
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.darkGray]
+        navigationBar.isTranslucent = false;
     }
 }
 
