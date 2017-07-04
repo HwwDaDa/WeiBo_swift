@@ -27,6 +27,12 @@ class HWBMainTabBarVC: UITabBarController {
     //@bojc，在运行时通过OC的消息机制被使用
     func composeStatus() {
         print("写微博")
+        //测试方向旋转
+        let vc = UIViewController()
+        vc.view.backgroundColor = UIColor.cz_random()
+        let nav = UINavigationController(rootViewController: vc)
+        
+        present(nav, animated: true, completion: nil)
     }
     
     lazy var composeButton:UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
