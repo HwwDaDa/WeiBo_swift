@@ -42,7 +42,8 @@ class HWBBaseViewController: UIViewController {
 extension HWBBaseViewController{
     func setupUI(){
         view.backgroundColor = UIColor.cz_random()
-        
+//        取消自动缩进 - 如果隐藏了导航栏会缩进20个点
+        automaticallyAdjustsScrollViewInsets = false
         
         setupNavigationBar()
         setupTableView()
@@ -59,6 +60,7 @@ extension HWBBaseViewController{
         tableView?.delegate = self
         tableView?.dataSource = self
         
+        tableView?.contentInset = UIEdgeInsetsMake(navigationBar.bounds.height, 0, tabBarController?.tabBar.bounds.height ?? 49, 0)
     }
     
     private func setupNavigationBar(){
