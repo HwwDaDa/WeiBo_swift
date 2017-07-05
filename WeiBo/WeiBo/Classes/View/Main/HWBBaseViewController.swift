@@ -38,7 +38,7 @@ class HWBBaseViewController: UIViewController {
     
 //     加载数据，具体的实现子类实现就可以了
     func loadData() {
-        
+        refreshControl?.endRefreshing()
     }
 
 }
