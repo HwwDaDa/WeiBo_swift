@@ -13,6 +13,9 @@ import UIKit
 class HWBBaseViewController: UIViewController {
 //  表格视图，因此不能用懒加载
     var tableView: UITableView?
+//    可选的刷新空间
+    var refreshControl: UIRefreshControl?
+    
     
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var navItem = UINavigationItem()
@@ -61,6 +64,13 @@ extension HWBBaseViewController{
         tableView?.dataSource = self
         
         tableView?.contentInset = UIEdgeInsetsMake(navigationBar.bounds.height, 0, tabBarController?.tabBar.bounds.height ?? 49, 0)
+        
+//        设置刷新空间
+//        ->实例化空间
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
+//        添加到视图
+        tableView?.addSubview(refreshControl!)
     }
     
     private func setupNavigationBar(){

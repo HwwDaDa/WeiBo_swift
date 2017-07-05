@@ -25,10 +25,22 @@ class HWBHomeViewController: HWBBaseViewController {
     
 //    加载数据
     override func loadData() {
-        for i in 0..<15 {
-            //每次将数据插入到顶部
-            statusList.insert(i.description, at: 0)
+        
+//        在swift中GCD有了很大的变化，这个变化就是我们需要用队列调用，在尾随闭包回调的时候必须用self
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            for i in 0..<15 {
+                //每次将数据插入到顶部
+                statusList.insert(i.description, at: 0)
+            }
+            
+            self.refreshControl?.endRefreshing()
+            
+            //            刷新tableView
+            self.tableView?.reloadData()
         }
+        
+        
+        
     }
     
     /// 显示好友
