@@ -27,13 +27,22 @@ class HWBHomeViewController: HWBBaseViewController {
     override func loadData() {
         
 //        在swift中GCD有了很大的变化，这个变化就是我们需要用队列调用，在尾随闭包回调的时候必须用self
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             for i in 0..<15 {
-                //每次将数据插入到顶部
-                statusList.insert(i.description, at: 0)
+                if self.isPullup{
+                    statusList.append("上啦 \(i)")
+                    
+                }else{
+                    //每次将数据插入到顶部
+                    statusList.insert(i.description, at: 0)
+                }
             }
             
             self.refreshControl?.endRefreshing()
+            
+            
+//                    完事后恢复上拉刷新
+            self.isPullup = false
             
             //            刷新tableView
             self.tableView?.reloadData()

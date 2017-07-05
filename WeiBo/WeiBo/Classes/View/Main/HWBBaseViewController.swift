@@ -16,6 +16,9 @@ class HWBBaseViewController: UIViewController {
 //    可选的刷新空间
     var refreshControl: UIRefreshControl?
     
+//    上拉刷新标记
+    var isPullup = false
+    
     
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var navItem = UINavigationItem()
@@ -95,6 +98,27 @@ extension HWBBaseViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        在现实最后的一行的时候做上啦刷新，先判断是否是最后一行
+        let row = indexPath.row
+        let section = tableView.numberOfSections - 1
+        
+//        判断
+        if row < 0 || section < 0 {
+            return
+        }
+        
+        let count = tableView.numberOfRows(inSection: section)
+        if row == count - 1 && !isPullup {
+            print("上拉刷新")
+            isPullup = true
+            
+//            开始刷新
+            loadData()
+        }
+        
     }
 }
 
