@@ -132,6 +132,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84120EE71F0B691F00F246A0 /* 主控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				84BC19A11EF2812900D1C53A /* HWBNavigationVC.swift */,
+				84BC19881EF27E2F00D1C53A /* HWBMainTabBarVC.swift */,
+			);
+			name = "主控制器";
+			sourceTree = "<group>";
+		};
 		84BC18E51EF25DBF00D1C53A = {
 			isa = PBXGroup;
 			children = (
@@ -276,8 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				84BC19871EF27E2F00D1C53A /* HWBBaseViewController.swift */,
-				84BC19881EF27E2F00D1C53A /* HWBMainTabBarVC.swift */,
-				84BC19A11EF2812900D1C53A /* HWBNavigationVC.swift */,
+				84120EE71F0B691F00F246A0 /* 主控制器 */,
 			);
 			path = Main;
 			sourceTree = "<group>";
