@@ -11,10 +11,17 @@ import UIKit
 //OC重支持多继承码，不支持，答案是使用协议替代
 //swift的这种方法类似于多继承，这就是不同于OC的地方
 class HWBBaseViewController: UIViewController {
+    
+// MARK:    用户登录标记
+    var userLogon = false
+    
 //  表格视图，因此不能用懒加载
     var tableView: UITableView?
 //    可选的刷新空间
     var refreshControl: UIRefreshControl?
+    
+//    上拉刷新标记
+    var isPullup = false
     
     
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
@@ -35,7 +42,7 @@ class HWBBaseViewController: UIViewController {
     
 //     加载数据，具体的实现子类实现就可以了
     func loadData() {
-        
+        refreshControl?.endRefreshing()
     }
 
 }
@@ -44,12 +51,23 @@ class HWBBaseViewController: UIViewController {
 // MARK: - 设置UI的东西
 extension HWBBaseViewController{
     func setupUI(){
-        view.backgroundColor = UIColor.cz_random()
+        view.backgroundColor = UIColor.white
 //        取消自动缩进 - 如果隐藏了导航栏会缩进20个点
         automaticallyAdjustsScrollViewInsets = false
         
         setupNavigationBar()
-        setupTableView()
+        
+//    用户是否登录判断
+        userLogon ? setupTableView() : setupVisitorView()
+        
+    }
+    
+//    MARK: 设置访客视图
+    private func setupVisitorView(){
+        let visitorView = UIView(frame: view.bounds)
+        visitorView.backgroundColor = UIColor.cz_random()
+        view.insertSubview(visitorView, belowSubview: navigationBar)
+        
     }
     
 //    设置表格视图
@@ -95,6 +113,27 @@ extension HWBBaseViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        在现实最后的一行的时候做上啦刷新，先判断是否是最后一行
+        let row = indexPath.row
+        let section = tableView.numberOfSections - 1
+        
+//        判断
+        if row < 0 || section < 0 {
+            return
+        }
+        
+        let count = tableView.numberOfRows(inSection: section)
+        if row == count - 1 && !isPullup {
+            print("上拉刷新")
+            isPullup = true
+            
+//            开始刷新
+            loadData()
+        }
+        
     }
 }
 
