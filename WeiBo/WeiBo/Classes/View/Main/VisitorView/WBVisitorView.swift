@@ -22,6 +22,24 @@ class WBVisitorView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //设置访客视图信息,设置访客信息
+    func setupInfo(dict:[String: String]) {
+        //取出信息
+        guard let imageName = dict["imageName"],
+        let message = dict["message"] else {
+            return
+        }
+        
+        //设置消息
+        tipLable.text = message
+        
+        //设置头像
+        if imageName == ""{
+            return
+        }
+        iconView.image = UIImage(named: imageName)
+    }
+    
 //    MARK:私有控件
     lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
     
