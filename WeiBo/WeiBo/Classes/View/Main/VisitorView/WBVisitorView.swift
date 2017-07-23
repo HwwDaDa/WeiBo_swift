@@ -23,8 +23,12 @@ class WBVisitorView: UIView {
     }
     
 //    MARK:私有控件
-    lazy var iconView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
+    lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
     
+    //遮挡头像
+    lazy var maskIconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))
+    
+    //小房子
     lazy var houseIconView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_house"))
     
 //    懒加载属性只有调用UIKit的控件指定的构造函数
@@ -41,6 +45,7 @@ extension WBVisitorView {
         
 //        添加控件
         addSubview(iconView)
+        addSubview(maskIconView)
         addSubview(houseIconView)
         addSubview(tipLable)
         addSubview(registerButton)
@@ -77,6 +82,15 @@ extension WBVisitorView {
         addConstraint(NSLayoutConstraint(item: loginButton, attribute: .right, relatedBy: .equal, toItem: tipLable, attribute: .right, multiplier: 1, constant: 0))
         addConstraint(NSLayoutConstraint(item: loginButton, attribute: .top, relatedBy: .equal, toItem: tipLable, attribute: .bottom, multiplier: 1.0, constant: margin))
         addConstraint(NSLayoutConstraint(item: loginButton, attribute: .width, relatedBy: .equal, toItem: registerButton, attribute: .width, multiplier: 1.0, constant: 0))
+        
+        //遮罩头像
+        //views定义VFL控件中的名称和实际的映射关系
+        let viewDict = ["maskIconView":maskIconView,
+                        "registerButton":registerButton] as [String : Any]
+        
+        addConstraints(
+            NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[maskIconView]-0-|", options: [], metrics: nil, views: viewDict))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[maskIconView]-(-35)-[registerButton]", options: [], metrics: nil, views: viewDict))
         
     }
 }
