@@ -41,7 +41,7 @@ class WBVisitorView: UIView {
 
 extension WBVisitorView {
     func setupUI() {
-        backgroundColor = UIColor.white
+        backgroundColor = UIColor.cz_color(withHex: 0xEDEDED)
         
 //        添加控件
         addSubview(iconView)
