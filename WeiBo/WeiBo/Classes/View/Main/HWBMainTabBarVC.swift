@@ -57,7 +57,7 @@ extension HWBMainTabBarVC
     func setupChildController()
     {
         let array = [
-            ["clsName":"HWBHomeViewController","title":"首页","imageName":"tabbar_home"],
+            ["clsName":"HWBHomeViewController","title":"首页","imageName":"tabbar_home","visitoeInfo":["imageName":"","message":"哈哈"]],
             ["clsName":"HWBMessageViewController","title":"消息","imageName":"tabbar_message_center"],
             ["clsName":"","title":"","imageName":""],
             ["clsName":"HWBDiscoverViewController","title":"发现","imageName":"tabbar_discover"],
@@ -67,14 +67,18 @@ extension HWBMainTabBarVC
         
         var arrayM = [UIViewController]()
         for dict in array {
-            arrayM.append(controller(dict: dict))
+            arrayM.append(controller(dict: dict as [String : AnyObject] ))
         }
         
         viewControllers = arrayM
     }
     //创建一个控制器
-    private func controller(dict: [String : String]) -> UIViewController {
-        guard let clsName = dict["clsName"],let title = dict["title"],let imageName = dict["imageName"],let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type else{
+    private func controller(dict: [String : AnyObject]) -> UIViewController {
+        guard let clsName = dict["clsName"] as? String,
+            let title = dict["title"] as? String,
+            let imageName = dict["imageName"] as? String,
+            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type
+            else{
             
             return UIViewController()
         }
