@@ -11,6 +11,25 @@ import UIKit
 //访客视图
 class WBVisitorView: UIView {
 
+    //访客视图的信息字典
+    var visitorInfo: [String : String]? {
+        didSet{
+            guard let imageName = visitorInfo?["imageName"],
+                let message = visitorInfo?["message"] else {
+                    return
+            }
+            
+            //设置消息
+            tipLable.text = message
+            
+            //设置头像
+            if imageName == ""{
+                return
+            }
+            iconView.image = UIImage(named: imageName)
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -20,24 +39,6 @@ class WBVisitorView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    //设置访客视图信息,设置访客信息
-    func setupInfo(dict:[String: String]) {
-        //取出信息
-        guard let imageName = dict["imageName"],
-        let message = dict["message"] else {
-            return
-        }
-        
-        //设置消息
-        tipLable.text = message
-        
-        //设置头像
-        if imageName == ""{
-            return
-        }
-        iconView.image = UIImage(named: imageName)
     }
     
 //    MARK:私有控件
