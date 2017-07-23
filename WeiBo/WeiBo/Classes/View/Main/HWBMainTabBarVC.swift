@@ -57,13 +57,24 @@ extension HWBMainTabBarVC
     func setupChildController()
     {
         let array = [
-            ["clsName":"HWBHomeViewController","title":"首页","imageName":"tabbar_home","visitoeInfo":["imageName":"","message":"哈哈"]],
-            ["clsName":"HWBMessageViewController","title":"消息","imageName":"tabbar_message_center"],
-            ["clsName":"","title":"","imageName":""],
-            ["clsName":"HWBDiscoverViewController","title":"发现","imageName":"tabbar_discover"],
-            ["clsName":"HWBProfileViewController","title":"我的","imageName":"tabbar_profile"],
+            //首页
+            ["clsName":"HWBHomeViewController","title":"首页","imageName":"tabbar_home",
+             "visitoeInfo":["imageName":"","message":"关注一些人，回到这里看看有什么样的惊喜"]],
+            //消息
+            ["clsName":"HWBMessageViewController","title":"消息","imageName":"tabbar_message_center",
+             "visitoeInfo":["imageName":"visitordiscover_image_message","message":"登录后，被人评论你的微博，都会在这里收到通知"]],
+            
+            //中间按钮
+            ["clsName":"UIViewController"],
+            
+            //发现
+            ["clsName":"HWBDiscoverViewController","title":"发现","imageName":"tabbar_discover","visitoeInfo":["imageName":"visitordiscover_image_profile","message":"登录后，最热，最新微博尽在掌握，不再会与实事潮流插件而过"]],
+            
+            //我的
+            ["clsName":"HWBProfileViewController","title":"我的","imageName":"tabbar_profile","visitoeInfo":["imageName":"visitordiscover_image_profile","message":"登录后，你的微博，相册，个人资料会显示在这里，展示给别人"]],
         
         ]
+        
         
         var arrayM = [UIViewController]()
         for dict in array {
