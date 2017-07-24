@@ -56,6 +56,17 @@ extension HWBMainTabBarVC
     
     func setupChildController()
     {
+        
+        //从bundle加载配置文件
+//        guard let path = Bundle.main.path(forResource: "main.json", ofType: nil),
+//        let data = NSData(contentsOfFile: path),
+//        let  array = try? JSONSerialization.jsonObject(with: data as Data, options: [])
+//            else{
+//            return
+//        }
+//        
+
+        
         let array = [
             //首页
             ["clsName":"HWBHomeViewController","title":"首页","imageName":"tabbar_home",
