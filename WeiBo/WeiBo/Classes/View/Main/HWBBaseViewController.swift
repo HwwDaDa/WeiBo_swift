@@ -12,6 +12,8 @@ import UIKit
 //swift的这种方法类似于多继承，这就是不同于OC的地方
 class HWBBaseViewController: UIViewController {
     
+    var visitorInfoDictionary: [String: String]?
+    
 // MARK:    用户登录标记
     var userLogon = false
     
@@ -66,7 +68,7 @@ extension HWBBaseViewController{
     private func setupVisitorView(){
         let visitorView = WBVisitorView(frame: view.bounds)
         view.insertSubview(visitorView, belowSubview: navigationBar)
-        
+        visitorView.visitorInfo = visitorInfoDictionary
     }
     
 //    设置表格视图

@@ -88,7 +88,9 @@ extension HWBMainTabBarVC
         guard let clsName = dict["clsName"] as? String,
             let title = dict["title"] as? String,
             let imageName = dict["imageName"] as? String,
-            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type
+            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? HWBBaseViewController.Type,
+        let visitorDict = dict["visitoeInfo"] as? [String:String]
+        
             else{
             
             return UIViewController()
@@ -97,6 +99,10 @@ extension HWBMainTabBarVC
         //创建视图控制器
         let vc = cls.init()
         vc.title = title;
+        
+        //设置控制器的访客字典
+        vc.visitorInfoDictionary = visitorDict
+        
         //设置图片
         vc.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
         vc.tabBarItem.selectedImage = UIImage(named: imageName + "_selected")
