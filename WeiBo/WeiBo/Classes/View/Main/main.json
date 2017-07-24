@@ -1,0 +1,41 @@
+[
+  {
+    "clsName" : "HWBHomeViewController",
+    "title" : "首页",
+    "visitoeInfo" : {
+      "imageName" : "",
+      "message" : "关注一些人，回到这里看看有什么样的惊喜"
+    },
+    "imageName" : "tabbar_home"
+  },
+  {
+    "clsName" : "HWBMessageViewController",
+    "title" : "消息",
+    "visitoeInfo" : {
+      "imageName" : "visitordiscover_image_message",
+      "message" : "登录后，被人评论你的微博，都会在这里收到通知"
+    },
+    "imageName" : "tabbar_message_center"
+  },
+  {
+    "clsName" : "UIViewController"
+  },
+  {
+    "clsName" : "HWBDiscoverViewController",
+    "title" : "发现",
+    "visitoeInfo" : {
+      "imageName" : "visitordiscover_image_profile",
+      "message" : "登录后，最热，最新微博尽在掌握，不再会与实事潮流插件而过"
+    },
+    "imageName" : "tabbar_discover"
+  },
+  {
+    "clsName" : "HWBProfileViewController",
+    "title" : "我的",
+    "visitoeInfo" : {
+      "imageName" : "visitordiscover_image_profile",
+      "message" : "登录后，你的微博，相册，个人资料会显示在这里，展示给别人"
+    },
+    "imageName" : "tabbar_profile"
+  }
+]

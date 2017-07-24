@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F938E158270A30F45066A92 /* libPods-WeiBo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DBB83F3D674B80F9218191 /* libPods-WeiBo.a */; };
 		8410C1F01EF3D05800B6FE90 /* HWBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC19871EF27E2F00D1C53A /* HWBBaseViewController.swift */; };
+		841767DD1F25EA1700F5D1DB /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 841767DC1F25EA1700F5D1DB /* main.json */; };
 		8425478C1EFABD7C004A435E /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425478B1EFABD7C004A435E /* UIBarButtonItem+Extensions.swift */; };
 		845BF9881F0E7C4200726A01 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BF9871F0E7C4200726A01 /* WBVisitorView.swift */; };
 		84BC18F21EF25DBF00D1C53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC18F11EF25DBF00D1C53A /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		60DBB83F3D674B80F9218191 /* libPods-WeiBo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeiBo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		841767DC1F25EA1700F5D1DB /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		8425478B1EFABD7C004A435E /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		845BF9871F0E7C4200726A01 /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
 		84BC18EE1EF25DBF00D1C53A /* WeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,7 @@
 		84120EE71F0B691F00F246A0 /* 主控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				841767DC1F25EA1700F5D1DB /* main.json */,
 				84BC19A11EF2812900D1C53A /* HWBNavigationVC.swift */,
 				84BC19881EF27E2F00D1C53A /* HWBMainTabBarVC.swift */,
 			);
@@ -461,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841767DD1F25EA1700F5D1DB /* main.json in Resources */,
 				84BC18FC1EF25DBF00D1C53A /* LaunchScreen.storyboard in Resources */,
 				84BC18F91EF25DBF00D1C53A /* Assets.xcassets in Resources */,
 			);

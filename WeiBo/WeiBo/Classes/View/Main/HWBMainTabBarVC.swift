@@ -75,6 +75,11 @@ extension HWBMainTabBarVC
         
         ]
         
+        //数组到json，叫系列化
+        let data = try? JSONSerialization.data(withJSONObject: array, options: [.prettyPrinted])
+        let fileUrl = NSURL.fileURL(withPath: "/Users/admin/Desktop/demo.json")
+        (data! as NSData).write(to: fileUrl, atomically: true)
+        
         
         var arrayM = [UIViewController]()
         for dict in array {
