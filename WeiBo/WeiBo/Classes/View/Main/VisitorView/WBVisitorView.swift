@@ -24,6 +24,7 @@ class WBVisitorView: UIView {
             
             //设置头像
             if imageName == ""{
+                startAnimation()
                 return
             }
             iconView.image = UIImage(named: imageName)
@@ -44,6 +45,23 @@ class WBVisitorView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //旋转图标动画首页的(首页需要)
+    func startAnimation() {
+        let anim = CABasicAnimation(keyPath: "transform.rotation")
+        anim.toValue = 2 * (Double.pi)
+        anim.repeatCount = MAXFLOAT
+        anim.duration = 15
+        
+        //动画完成不删除，如果iconView被释放，动画会一起销毁
+        //在设置连续播放动画的时候非常有用
+        anim.isRemovedOnCompletion = false
+        
+        //将动画添加到图层
+        iconView.layer.add(anim, forKey: nil)
+    }
+    
+    
     
 //    MARK:私有控件
     lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
