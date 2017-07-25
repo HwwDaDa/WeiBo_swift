@@ -50,6 +50,17 @@ class HWBBaseViewController: UIViewController {
 }
 
 
+// MARK: - 访客视图监听方法
+extension HWBBaseViewController{
+    @objc func login(){
+        print("用户登录")
+    }
+    
+    @objc func register(){
+        print("用户注册")
+    }
+}
+
 // MARK: - 设置UI的东西
 extension HWBBaseViewController{
     func setupUI(){
@@ -69,6 +80,15 @@ extension HWBBaseViewController{
         let visitorView = WBVisitorView(frame: view.bounds)
         view.insertSubview(visitorView, belowSubview: navigationBar)
         visitorView.visitorInfo = visitorInfoDictionary
+        
+        //代理的主要主要总用就是解耦，什么时候用指针，什么时候用代理了，在一个类里面可以多个使用的时候我们就用解耦的（delegate）,当我们在一处使用的时候用指针，总结一般时候我们的基类里面一般都用delegate方法控制类。
+        visitorView.loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
+        visitorView.registerButton.addTarget(self, action: #selector(register), for: .touchUpInside)
+        
+        //没有登录的时候设置导航栏的颜色
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(register))
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(login))
+        
     }
     
 //    设置表格视图

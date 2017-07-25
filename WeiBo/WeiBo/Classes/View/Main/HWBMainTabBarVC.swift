@@ -56,6 +56,18 @@ extension HWBMainTabBarVC
     
     func setupChildController()
     {
+        //获取沙河的json 路径
+//        let docDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+//        let jsonPath = (docDir as NSString).appendingPathComponent("main.json")
+//        
+//        //加载data
+//        let data = NSData(contentsOfFile: jsonPath)
+//        
+//        //判断data是否有内容,说明本地沙河没有文件
+//        if data == nil {
+//            
+//        }
+        
         
         //从bundle加载配置文件
 //        guard let path = Bundle.main.path(forResource: "main.json", ofType: nil),
